@@ -1,6 +1,6 @@
 package io.github.manuelernesto.Arrays;
 
-public class MainArray{
+public class MainArray {
     public static void main(String[] args) {
         int[] intArrays = new int[7];
         intArrays[0] = 20;
@@ -11,8 +11,13 @@ public class MainArray{
         intArrays[5] = 1;
         intArrays[6] = -22;
 
-        for (int intArray : intArrays) {
-            System.out.println(intArray);
+        int index = -1;
+        for (int i = 0; i < intArrays.length; i++) {
+            if (intArrays[i] == 7) {
+                index = i;
+                break;
+            }
         }
+        System.out.println("Index: " + index);
     }
 }
