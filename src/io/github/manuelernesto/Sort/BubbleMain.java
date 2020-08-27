@@ -6,7 +6,7 @@ public class BubbleMain {
 
         //Before Sorted
         for (var intArray : intArrays) {
-            System.out.println("" + intArray);
+            System.out.println(intArray);
         }
 
         for (var lastUnsortedIndex = intArrays.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
@@ -21,7 +21,7 @@ public class BubbleMain {
         System.out.println("++++++++++++++++++++++");
         //After Sorted
         for (var intArray : intArrays) {
-            System.out.println("" + intArray);
+            System.out.println(intArray);
         }
     }
 
