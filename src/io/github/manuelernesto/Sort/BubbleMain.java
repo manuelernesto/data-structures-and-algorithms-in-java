@@ -5,13 +5,13 @@ public class BubbleMain {
         int[] intArrays = {20, 35, -15, 7, 55, 1, -22};
 
         //Before Sorted
-        for (int intArray : intArrays) {
+        for (var intArray : intArrays) {
             System.out.println("" + intArray);
         }
 
-        for (int lastUnsortedIndex = intArrays.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
+        for (var lastUnsortedIndex = intArrays.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
 
-            for (int i = 0; i < lastUnsortedIndex; i++) {
+            for (var i = 0; i < lastUnsortedIndex; i++) {
                 if (intArrays[i] > intArrays[i + 1])
                     swap(intArrays, i, i + 1);
             }
@@ -20,7 +20,7 @@ public class BubbleMain {
 
         System.out.println("++++++++++++++++++++++");
         //After Sorted
-        for (int intArray : intArrays) {
+        for (var intArray : intArrays) {
             System.out.println("" + intArray);
         }
     }
@@ -28,7 +28,7 @@ public class BubbleMain {
     static void swap(int[] array, int i, int j) {
         if (i == j) return;
 
-        int temp = array[i];
+        var temp = array[i];
         array[i] = array[j];
         array[j] = temp;
     }
